@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextTransactionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/transactionname"
+        android:layout_margin="16dp"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/spinnerWallets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTransactionName"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/walletselect"/>
+
+    <EditText
+        android:id="@+id/editTextTransactionAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_below="@id/spinnerWallets"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextTransactionCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/category"
+        android:layout_below="@id/editTextTransactionAmount"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextTransactionDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/desc"
+        android:layout_below="@id/editTextTransactionCategory"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/editTextTransactionDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/date"
+        android:layout_below="@id/editTextTransactionDescription"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusable="false"
+        android:onClick="pickDateTime"
+        android:importantForAutofill="no"
+        android:inputType="datetime" />
+
+    <Button
+        android:id="@+id/buttonAddTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTransactionDate"
+        android:layout_marginTop="16dp"
+        android:text="@string/addtransaction"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

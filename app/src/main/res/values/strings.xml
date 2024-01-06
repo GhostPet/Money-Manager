@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Money Manager</string>
+    <string name="username">Kullannıcı Adı</string>
+    <string name="pass">Şifre</string>
+    <string name="login">Giriş Yap</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="transactions">İşlemler</string>
+    <string name="wallets">Cüzdanlar</string>
+    <string name="settings">Ayarlar</string>
+    <string name="hello">Hoş Geldin</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="deleteacc">Hesabımı Sil</string>
+    <string name="changepass">Şifre Değiştir</string>
+    <string name="oldpass">Mevcut Şifren</string>
+    <string name="newpass">Yeni Şifren\n</string>
+    <string name="deleteaccountdialog">Hesap Silme</string>
+    <string name="deleteaccountdialog2">Hesabınızı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.</string>
+    <string name="addwallet">Cüzdan Ekle</string>
+    <string name="delete_wallet">Cüzdanı Sil</string>
+    <string name="walletname">Cüzdan Adı</string>
+    <string name="addtransaction">İşlem Ekle</string>
+    <string name="transactionname">İşlem Adı</string>
+    <string name="walletselect">Cüzdan</string>
+    <string name="amount">Tutar</string>
+    <string name="category">Kategori</string>
+    <string name="desc">Açıklama</string>
+    <string name="date">Tarih</string>
+</resources>
